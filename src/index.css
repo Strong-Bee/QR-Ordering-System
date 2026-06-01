@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;650;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Sophisticated Dark Color Palette */
+  --color-brand: #FF5F00;
+  --color-brand-muted: rgba(255, 95, 0, 0.1);
+  --color-brand-border: rgba(255, 95, 0, 0.2);
+  --color-darkest: #050505;
+  --color-dark-panel: #0A0A0A;
+  --color-dark-sidebar: #080808;
+  --color-dark-card: #0E0E0E;
+  --color-text-main: #E0E0E0;
+  --color-text-muted: rgba(255, 255, 255, 0.4);
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+/* Custom premium scrollbar hiding and styles */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom premium aesthetic overrides for Dark Mode */
+body {
+  background-color: #050505;
+  color: #E0E0E0;
+}
+
